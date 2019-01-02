@@ -1,0 +1,330 @@
+/* Grid
+*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+/* Clearing
+ */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Media Queries
+*/
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+
+
+
+
+
+/* Smaller than desktop */
+@media (max-width: 1000px) {
+  .two-thirds.column , .one-third.column {
+    width: 100%;
+  }
+  .header-image p {
+    width: 750px;
+  }
+  .column {
+    margin-left: 0%;
+  }
+  .menu-toggle {
+    background: none;
+    color: #000;
+  }
+  .footer-nav {
+    nav, .footer-tagline {
+      display: none;
+    }
+  }
+  .site-logo {
+    float: none;
+    display: block;
+    a img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .header-search {
+    .search-icon {
+      margin: 17px 0 0 0;
+    }
+    .search-icon-close {
+      margin: 17px 0 0 7px;
+    }
+    .header-search-bar {
+      margin: 8px 0 0 0;
+    }
+  }
+  nav#site-navigation {
+    display: inline-block;
+    float: none;
+  }
+  nav.main-navigation {
+  	display: inline-block;
+  	float: right;
+  	margin: 20px 0 0 0;
+  	width: auto;
+  	clear: none;
+
+
+  	li {
+  		margin: 0 0 0 20px;
+      float: none;
+
+  		 a {
+  			padding: 5px 0px;
+  			color: $color__main-navigation;
+  			font-weight: 400;
+  			text-shadow: none;
+  			-webkit-transition: color 0.3s;
+  			-moz-transition: color 0.3s;
+  			transition: color 0.3s;
+  			text-transform: uppercase;
+  		}
+  		 a:before,
+  		 a:after {
+  			position: absolute;
+  			left: 0;
+  			width: 100%;
+  			height: 1px;
+  			background: none;
+  			content: '';
+  			opacity: 0;
+  			-webkit-transition: none;
+  			-moz-transition: none;
+  			transition: none;
+  			-webkit-transform: none;
+  			-moz-transform: none;
+  			transform: none;
+  		}
+
+  		 a:before {
+  			top: 0;
+  			-webkit-transform: none;
+  			-moz-transform: none;
+  			transform: none;
+  		}
+
+  		a:after {
+  			bottom: 0;
+  			-webkit-transform: none;
+  			-moz-transform: none;
+  			transform: none;
+  		}
+  		 a:hover,
+  		 a:focus {
+  			color: $color__site-hover;
+  		}
+
+  		 a:hover:before,
+  		a:focus:before,
+  		 a:hover:after,
+  		 a:focus:after {
+  			opacity: 1;
+  			-webkit-transform: translateY(0px);
+  			-moz-transform: translateY(0px);
+  			transform: translateY(0px);
+  		}
+  	}
+  	ul ul {
+  		background: #fff;
+  		top: 2.125em;
+
+  		.menu-item-has-children {
+  			background: url(images/down-caret.jpg);
+  			height: auto;
+  			width: auto;
+  			display: block;
+  			background-repeat: no-repeat;
+  			background-position: 93% 50%;
+  			padding: 0 13px 0 0;
+  		}
+
+  		a:hover:before, a:hover:after {
+  			content: '';
+  			opacity: 0;
+  			height: 0px;
+  		}
+  	}
+  }
+}
+
+/* Smaller than tablet */
+@media (max-width: 750px) {
+  .two-thirds.column , .one-third.column {
+    width: 100%;
+  }
+  .header-image p {
+    width: 400px;
+  }
+  .regular-post .entry-content {
+    display: block;
+  }
+  .regular-post .hentry {
+    background: #fff;
+  }
+  .regular-post header img {
+    max-width: 100%;
+  }
+  .column {
+    margin-left: 0%;
+  }
+  .pagination {
+    margin: 0 0 20px 0;
+    float: none;
+  }
+  .post-navigation {
+    float: left;
+  }
+  .header-search {
+    display: none;
+  }
+  nav#site-navigation {
+    display: block;
+    .menu-toggle {
+      margin: 0 auto;
+    }
+  }
+
+  nav.main-navigation ul ul li {
+    &:hover > ul,
+    &.focus > ul {
+      left: 20%;
+      top: 100%;
+    }
+  }
+
+}
+
+/* Smaller than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+  .two-thirds.column , .one-third.column {
+    width: 100%;
+  }
+  .header-image p {
+    width: 400px;
+  }
+  .column {
+    margin-left: 0%;
+  }
+  nav.main-navigation ul ul li {
+    &:hover > ul,
+    &.focus > ul {
+      left: 20%;
+      top: 100%;
+    }
+  }
+
+}
+
+/* Smaller than mobile */
+@media (max-width: 400px) {
+  .header-image p {
+    width: 300px;
+  }
+  aside input {
+    margin: 10px 0 0 0;
+  }
+  nav.main-navigation ul ul li {
+    &:hover > ul,
+    &.focus > ul {
+      left: 20%;
+      top: 100%;
+    }
+  }
+
+}

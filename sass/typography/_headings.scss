@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+h2.entry-title {
+	a, a:visited {
+		color: $color__post-headline;
+		text-decoration: none;
+		font-size: .8em;
+		line-height: 1.5em;
+		display: inline-block;
+	}
+	a:hover {
+		color: $color__post-headline-hover;
+	}
+}
+h1 {
+	font-size: 2.5em;
+}
